@@ -18,7 +18,6 @@ using namespace std; //std namespace -> iostream
 //Global constants
 
 //Function Prototypes
-void gameDes();
 const int COLS=4;
 void blChtP1(char [][COLS],const int);
 void prn1Cht(char [][COLS],const int);
@@ -38,7 +37,6 @@ int main(int argc, char** argv) {
         infile>>rules;
         cout<<rules<<" ";
     }
-    //gameDes();
     
     //Declare variables for battleship chart
     const int SIZE=4;              //Size of the array 0-3
@@ -182,15 +180,6 @@ int main(int argc, char** argv) {
     
     //Exit Stage Right!
     return 0;
-}
-
-void gameDes(){
-cout<<"     This game is BattleShip. At the start of this game both\n"
-      "players assign coordinates to their ships. Each Player gets\n"
-      "fives ships of size 1 by 1. After both players have assigned\n"
-      "coordinates for all their ships the players then take turns\n"
-      "trying to destroy the enemies ship. Whoever is first to destroy\n"
-      "all enemy ships is the winner."<<endl;
 }
 
 /************************************************************
