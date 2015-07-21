@@ -32,7 +32,13 @@ char getSpot(char [][COLS],int,int);
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Call the function for the description of the game.
-    gameDes();
+    ifstream infile("BattleshipRules.txt");
+    string   rules;
+    while(!infile.eof()){
+        infile>>rules;
+        cout<<rules<<" ";
+    }
+    //gameDes();
     
     //Declare variables for battleship chart
     const int SIZE=4;              //Size of the array 0-3
@@ -50,7 +56,7 @@ int main(int argc, char** argv) {
     
     //Where does player 1 want their ships?
     cout<<"Player 1 will enter the coordinates of their 5 ships"<<endl;
-    cout<<"Enter Rows then enter columns ex:(1A or 1a)"<<endl;
+    cout<<"Enter Rows then enter columns. ex:(1A or 1a)"<<endl;
     cout<<endl;
     
     //Loop For player 1 to decide his coordinates
@@ -81,7 +87,7 @@ int main(int argc, char** argv) {
     
     //Where does player 2 want their ships?
     cout<<"Player 2 will enter the coordinates of their 5 ships"<<endl;
-    cout<<"Enter Rows then enter columns"<<endl;
+    cout<<"Enter Rows then enter columns. ex:(1A or 1a)"<<endl;
     cout<<endl;
     
     //Loop For player 2 to decide his coordinates
