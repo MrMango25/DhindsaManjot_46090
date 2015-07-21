@@ -10,6 +10,7 @@
 #include <cstring>
 #include <iomanip>
 #include <cstdlib>
+#include <fstream>
 using namespace std; //std namespace -> iostream
 
 //User Libraries
@@ -23,6 +24,7 @@ void blChtP1(char [][COLS],const int);
 void prn1Cht(char [][COLS],const int);
 void blChtP2(char [][COLS],const int);
 void prn2Cht(char [][COLS],const int);
+void clrScrn();
 void setSpot(char [][COLS],int,int,char);
 bool isHit(char [][COLS],int,int);
 char getSpot(char [][COLS],int,int);
@@ -48,7 +50,7 @@ int main(int argc, char** argv) {
     
     //Where does player 1 want their ships?
     cout<<"Player 1 will enter the coordinates of their 5 ships"<<endl;
-    cout<<"Enter Rows then enter columns"<<endl;
+    cout<<"Enter Rows then enter columns ex:(1A or 1a)"<<endl;
     cout<<endl;
     
     //Loop For player 1 to decide his coordinates
@@ -83,7 +85,8 @@ int main(int argc, char** argv) {
     cout<<endl;
     
     //Loop For player 2 to decide his coordinates
-    for(int i=0;i<5;i++){
+    int i=0;
+    while(i<5){
         int x,y;
         char choice;
         cin>>x;
@@ -100,9 +103,11 @@ int main(int argc, char** argv) {
         }
         x--;
         setSpot(play2Ct,x,y,'H');
+        i++;
     }
     prn2Cht(play2Ct,ROW);
     cout<<"These are the positions of your 5 ships."<<endl;
+    clrScrn();
     
     //Actual game. Players start attacking each other
     do{
@@ -252,13 +257,19 @@ void prn2Cht(char play2Ct[][COLS],const int ROW){
     }
 }
 
+void clrScrn(){
+    for(int i=0;i<50;i++){
+        cout<<endl;
+    }
+}
+
 void setSpot(char temp[][COLS],int x,int y,char c){
     temp[x][y]=c;
 }
 
 bool isHit(char chart[][COLS],int x,int y){
-    if(chart[x][y]=='H') return true;
-    else return false;
+    //Using Ternary Operator
+    return (chart[x][y]=='H'?true:false);
 }
 
 char getSpot(char chart[][COLS],int x,int y){
