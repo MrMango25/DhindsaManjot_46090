@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=battleship
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/battleship
+CND_ARTIFACT_NAME_Debug=battleship_v1
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/battleship_v1
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=battleship.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/battleship.tar
+CND_PACKAGE_NAME_Debug=battleshipv1.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/battleshipv1.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=battleship
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/battleship
+CND_ARTIFACT_NAME_Release=battleship_v1
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/battleship_v1
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=battleship.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/battleship.tar
+CND_PACKAGE_NAME_Release=battleshipv1.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/battleshipv1.tar
 #
 # include compiler specific variables
 #

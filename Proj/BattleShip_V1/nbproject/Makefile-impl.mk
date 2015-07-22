@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=BattleShip
+PROJECTNAME=BattleShip_V1
 
 # Active Configuration
 DEFAULTCONF=Debug
