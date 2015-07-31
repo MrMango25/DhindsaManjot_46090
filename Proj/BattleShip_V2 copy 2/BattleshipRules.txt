@@ -1,0 +1,4 @@
+This game is BattleShip.
+At the start of this game both players assign coordinates to their
+ships. Each player gets fives ships of size 1 by  1. After both players have assigned coordinates for all their ships the players then take turns trying to destroy the 
+enemies ships. Whoever is first to destroy all enemy ships is the winner.
